@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Array.cpp                                          :+:      :+:    :+:   */
+/*   Array.tpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/17 11:09:13 by nlewicki          #+#    #+#             */
-/*   Updated: 2025/03/17 11:24:57 by nlewicki         ###   ########.fr       */
+/*   Updated: 2025/03/18 14:27:29 by nlewicki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,6 +67,14 @@ Array<T> &Array<T>::operator=(Array const &src)
 // Operator "[]" overload
 template <typename T>
 T &Array<T>::operator[](unsigned int i)
+{
+	if (i >= _size)
+		throw OutOfBoundsException();
+	return _array[i];
+}
+
+template <typename T>
+const T &Array<T>::operator[](unsigned int i) const
 {
 	if (i >= _size)
 		throw OutOfBoundsException();

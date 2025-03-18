@@ -6,7 +6,7 @@
 /*   By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/17 11:08:47 by nlewicki          #+#    #+#             */
-/*   Updated: 2025/03/17 11:31:28 by nlewicki         ###   ########.fr       */
+/*   Updated: 2025/03/18 14:25:58 by nlewicki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void testDefaultConstructor()
 void testParamConstructor()
 {
 	std::cout << GREEN << "\n[TEST] Parameterized Constructor" << RESET << std::endl;
-	Array<int> arr(5);
+	const Array<int> arr(5);
 	std::cout << "Size: " << arr.size() << " (Expected: 5)" << std::endl;
 
 	// Print default values
