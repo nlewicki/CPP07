@@ -6,12 +6,15 @@
 /*   By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/17 10:54:28 by nlewicki          #+#    #+#             */
-/*   Updated: 2025/03/17 11:01:57 by nlewicki         ###   ########.fr       */
+/*   Updated: 2025/06/23 11:53:34 by nlewicki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "whatever.hpp"
 #include <iostream>
+
+// This program demonstrates the use of template functions to swap values
+// and find the minimum and maximum of two values, regardless of their type.
 
 int	main( void )
 {
